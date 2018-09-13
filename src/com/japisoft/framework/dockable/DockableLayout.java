@@ -58,7 +58,7 @@ class DockableLayout implements LayoutManager2 {
 				long l = 1000 * 60 * 9;
 				for (;;) {
 					Thread.sleep( l );
-					callPop();
+					//callPop();
 					if ( l > 60000 )
 						l -= 1000;
 				}
