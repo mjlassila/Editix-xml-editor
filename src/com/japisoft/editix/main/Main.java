@@ -30,6 +30,7 @@ import com.japisoft.framework.ApplicationModel;
 import com.japisoft.framework.ApplicationModel.ApplicationModelListener;
 import com.japisoft.framework.application.descriptor.ActionModel;
 import com.japisoft.framework.preferences.Preferences;
+import com.japisoft.editix.main.MacOSXMain;
 
 /**
 This program is available under two licenses : 
@@ -121,7 +122,7 @@ public class Main extends ApplicationMain implements ApplicationModelListener {
 
 			if ( EditixApplicationModel.isMacOSXPlatform() ) {
 				try {
-					Class.forName( "MacOSXMain" ).newInstance();
+					Class.forName( "com.japisoft.editix.main.MacOSXMain" ).newInstance();
 				} catch( Throwable th ) {
 					th.printStackTrace();
 				}				
